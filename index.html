@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Canvas Plus — See all your grades in one place. What-if modeling, assignment tracking, and more. Free for all Canvas LMS students.">
+  <meta property="og:title" content="Canvas Plus — Grade dashboard for Canvas LMS">
+  <meta property="og:description" content="750+ students use Canvas Plus to track grades, model what-ifs, and never miss a deadline.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://canvascalculator.xyz">
+  <title>Canvas Plus — Your grades, finally under control</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background layers -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <!-- ── Navigation ── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Canvas Plus home">
+        <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="100" height="100" rx="22" fill="#0ea5e9"/>
+          <text x="50" y="68" font-family="system-ui" font-size="50" font-weight="800" text-anchor="middle" fill="white">C+</text>
+        </svg>
+        <span>Canvas Plus</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#features"     class="nav-link smooth-scroll">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link smooth-scroll">How it works</a></li>
+        <li><a href="#demo"         class="nav-link smooth-scroll">Preview</a></li>
+        <li><a href="#stats"        class="nav-link smooth-scroll">Impact</a></li>
+      </ul>
+      <a href="https://canvascalculator.xyz" class="btn-primary nav-cta" target="_blank" rel="noopener noreferrer">
+        Open App <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section id="hero" aria-label="Hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-badge" id="hero-badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          750+ students worldwide
+        </div>
+        <h1 id="hero-h1">
+          Your Canvas grades,<br>
+          <span class="gradient-text">finally under control.</span>
+        </h1>
+        <p class="hero-sub" id="hero-sub">
+          Connect your Canvas account and see every grade, assignment,
+          and what-if scenario in one clean dashboard. No password required.
+        </p>
+        <div class="hero-ctas" id="hero-ctas">
+          <a href="https://canvascalculator.xyz" class="btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+            Open Canvas Plus <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#how-it-works" class="btn-ghost btn-lg smooth-scroll">
+            How it works
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator" id="scroll-indicator" aria-hidden="true">
+        <i data-lucide="chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- ── Stats ── -->
+    <section id="stats" aria-label="Impact statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-target="750" data-suffix="+">750+</div>
+            <div class="stat-label">Students using Canvas Plus</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="20" data-suffix="+">20+</div>
+            <div class="stat-label">Countries reached</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="70" data-suffix="%">70%</div>
+            <div class="stat-label">Return week over week</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-label">Free, forever</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features ── -->
+    <section id="features" aria-label="Features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Features</span>
+          <h2>Everything you need to<br>understand your grades.</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-lucide="bar-chart-2"></i>
+            </div>
+            <h3>Real-time Grade Tracking</h3>
+            <p>See your current grade across all courses, updated live from Canvas. No manual entry ever.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-lucide="flask-conical"></i>
+            </div>
+            <h3>What-If Grade Modeling</h3>
+            <p>Simulate grade changes before they happen. Ask "what if I got 90 on the final?" and see it instantly.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-lucide="grip"></i>
+            </div>
+            <h3>Drag-and-Drop Reordering</h3>
+            <p>Arrange your course cards in the order that matters to you. Changes persist across sessions.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-lucide="calendar-clock"></i>
+            </div>
+            <h3>Upcoming &amp; Overdue</h3>
+            <p>Never miss a deadline. See what's due soon and what's already late — all in one panel.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-lucide="tag"></i>
+            </div>
+            <h3>Custom Course Aliases</h3>
+            <p>Rename "CHEM 101 Sec 4 — Spring 2025" to just "Chemistry." Your dashboard, your rules.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <i data-lucide="palette"></i>
+            </div>
+            <h3>Background Customization</h3>
+            <p>Choose from 8 preset backgrounds or upload your own. Make the dashboard feel like yours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── How It Works ── -->
+    <section id="how-it-works" aria-label="How it works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">How It Works</span>
+          <h2>Up and running<br>in 3 steps.</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num" aria-hidden="true">01</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true">
+                <i data-lucide="key"></i>
+              </div>
+              <h3>Get your API token</h3>
+              <p>In Canvas: <strong>Account → Settings → Approved Integrations → New Access Token.</strong> Takes 30 seconds. No password sharing.</p>
+            </div>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step-card">
+            <div class="step-num" aria-hidden="true">02</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true">
+                <i data-lucide="link"></i>
+              </div>
+              <h3>Enter your school domain</h3>
+              <p>Type your Canvas URL — something like <code>myschool.instructure.com</code>. That's all we need.</p>
+            </div>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step-card">
+            <div class="step-num" aria-hidden="true">03</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true">
+                <i data-lucide="layout-dashboard"></i>
+              </div>
+              <h3>See everything</h3>
+              <p>Your grades, assignments, and projections load instantly. Start modeling what-ifs right away.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Demo / Screenshot ── -->
+    <section id="demo" aria-label="App preview">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Preview</span>
+          <h2>See it in action.</h2>
+        </div>
+        <div class="demo-wrapper">
+          <div class="browser-mockup" id="browser-mockup">
+            <div class="browser-chrome">
+              <div class="traffic-lights" aria-hidden="true">
+                <span class="tl tl-red"></span>
+                <span class="tl tl-yellow"></span>
+                <span class="tl tl-green"></span>
+              </div>
+              <div class="url-bar" aria-label="URL bar">canvascalculator.xyz</div>
+              <div class="chrome-spacer" aria-hidden="true"></div>
+            </div>
+            <div class="browser-body">
+              <!-- App mockup — mirrors the real Canvas Plus dashboard -->
+              <div class="app-mockup" aria-label="Canvas Plus app mockup" role="img">
+
+                <!-- Real app header: title + action buttons -->
+                <div class="am-topbar">
+                  <h1 class="am-title">Canvas Plus</h1>
+                  <div class="am-topbar-btns">
+                    <button class="am-hbtn">Manage Courses</button>
+                    <button class="am-hbtn am-hbtn-active">All Courses</button>
+                    <button class="am-hbtn">Logout</button>
+                  </div>
+                </div>
+
+                <!-- Scrollable content area -->
+                <div class="am-scroll">
+
+                  <!-- Course grid — mirrors .courses-grid -->
+                  <div class="am-courses">
+
+                    <div class="am-card" draggable="true">
+                      <div class="am-drag-handle" aria-hidden="true">&#8942;&#8942;</div>
+                      <h3 class="am-course-name">AP Calculus BC</h3>
+                      <div class="am-grade-row">
+                        <span class="am-grade-letter">A</span>
+                        <span class="am-grade-pct">94.2%</span>
+                      </div>
+                    </div>
+
+                    <div class="am-card" draggable="true">
+                      <div class="am-drag-handle" aria-hidden="true">&#8942;&#8942;</div>
+                      <h3 class="am-course-name">AP English Literature</h3>
+                      <div class="am-grade-row">
+                        <span class="am-grade-letter">A–</span>
+                        <span class="am-grade-pct">91.8%</span>
+                      </div>
+                    </div>
+
+                    <div class="am-card" draggable="true">
+                      <div class="am-drag-handle" aria-hidden="true">&#8942;&#8942;</div>
+                      <h3 class="am-course-name">AP Chemistry</h3>
+                      <div class="am-grade-row">
+                        <span class="am-grade-letter">B+</span>
+                        <span class="am-grade-pct">88.4%</span>
+                      </div>
+                    </div>
+
+                    <div class="am-card" draggable="true">
+                      <div class="am-drag-handle" aria-hidden="true">&#8942;&#8942;</div>
+                      <h3 class="am-course-name">AP US History</h3>
+                      <div class="am-grade-row">
+                        <span class="am-grade-letter">A</span>
+                        <span class="am-grade-pct">96.1%</span>
+                      </div>
+                    </div>
+
+                    <div class="am-card" draggable="true">
+                      <div class="am-drag-handle" aria-hidden="true">&#8942;&#8942;</div>
+                      <h3 class="am-course-name">Computer Science A</h3>
+                      <div class="am-grade-row">
+                        <span class="am-grade-letter">A+</span>
+                        <span class="am-grade-pct">97.5%</span>
+                      </div>
+                    </div>
+
+                    <div class="am-card" draggable="true">
+                      <div class="am-drag-handle" aria-hidden="true">&#8942;&#8942;</div>
+                      <h3 class="am-course-name">AP Physics C: Mech</h3>
+                      <div class="am-grade-row">
+                        <span class="am-grade-letter">B+</span>
+                        <span class="am-grade-pct">89.3%</span>
+                      </div>
+                    </div>
+
+                  </div><!-- /.am-courses -->
+
+                  <!-- Upcoming section — mirrors .upcoming-section -->
+                  <div class="am-upcoming">
+                    <h2 class="am-upcoming-title">Upcoming Assignments</h2>
+
+                    <div class="am-upcoming-item">
+                      <button class="am-check-btn" aria-label="Mark complete" aria-checked="false">✓</button>
+                      <div class="am-uitem-left">
+                        <div class="am-uitem-course">AP CALCULUS BC</div>
+                        <div class="am-uitem-name">Problem Set 9</div>
+                      </div>
+                      <div class="am-uitem-right">
+                        <span class="am-uitem-pts">100 pts</span>
+                        <span class="am-uitem-due am-urgent">Due in 2 days</span>
+                      </div>
+                    </div>
+
+                    <div class="am-upcoming-item">
+                      <button class="am-check-btn" aria-label="Mark complete" aria-checked="false">✓</button>
+                      <div class="am-uitem-left">
+                        <div class="am-uitem-course">AP US HISTORY</div>
+                        <div class="am-uitem-name">DBQ Essay Draft</div>
+                      </div>
+                      <div class="am-uitem-right">
+                        <span class="am-uitem-pts">50 pts</span>
+                        <span class="am-uitem-due">Due in 4 days</span>
+                      </div>
+                    </div>
+
+                    <div class="am-upcoming-item">
+                      <button class="am-check-btn" aria-label="Mark complete" aria-checked="false">✓</button>
+                      <div class="am-uitem-left">
+                        <div class="am-uitem-course">AP CHEMISTRY</div>
+                        <div class="am-uitem-name">Lab Report: Titration</div>
+                      </div>
+                      <div class="am-uitem-right">
+                        <span class="am-uitem-pts">75 pts</span>
+                        <span class="am-uitem-due">Due in 6 days</span>
+                      </div>
+                    </div>
+
+                    <div class="am-upcoming-item">
+                      <button class="am-check-btn" aria-label="Mark complete" aria-checked="false">✓</button>
+                      <div class="am-uitem-left">
+                        <div class="am-uitem-course">AP ENGLISH LITERATURE</div>
+                        <div class="am-uitem-name">Literary Analysis Essay</div>
+                      </div>
+                      <div class="am-uitem-right">
+                        <span class="am-uitem-pts">100 pts</span>
+                        <span class="am-uitem-due">Due in 9 days</span>
+                      </div>
+                    </div>
+
+                  </div><!-- /.am-upcoming -->
+
+                </div><!-- /.am-scroll -->
+
+                <!-- Real app watermark -->
+                <div class="am-watermark">Made by Sahaj Khandelwal</div>
+
+              </div><!-- /.app-mockup -->
+            </div>
+          </div>
+          <div class="demo-labels" aria-hidden="true">
+            <span class="demo-label">↑ What-if editor</span>
+            <span class="demo-label">↑ Drag to reorder</span>
+            <span class="demo-label">↑ Upcoming deadlines</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Final CTA ── -->
+    <section id="cta" aria-label="Call to action">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="container cta-content">
+        <h2>Ready to take control<br>of your grades?</h2>
+        <p>Join 750+ students across 20 countries.<br>No sign-up. Just your Canvas token.</p>
+        <a href="https://canvascalculator.xyz" class="btn-primary btn-xl" target="_blank" rel="noopener noreferrer">
+          Open Canvas Plus <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#" class="nav-logo footer-logo" aria-label="Canvas Plus home">
+          <svg width="22" height="22" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="100" height="100" rx="22" fill="#0ea5e9"/>
+            <text x="50" y="68" font-family="system-ui" font-size="50" font-weight="800" text-anchor="middle" fill="white">C+</text>
+          </svg>
+          <span>Canvas Plus</span>
+        </a>
+        <p class="footer-tagline">Built for students, by a student.</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://canvascalculator.xyz" target="_blank" rel="noopener noreferrer">Open App</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Made with care by <strong>Sahaj Khandelwal</strong> &nbsp;·&nbsp; Canvas Plus is not affiliated with Instructure or Canvas LMS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
