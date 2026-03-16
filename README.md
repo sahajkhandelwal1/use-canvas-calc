@@ -40,6 +40,6 @@ Drop app screenshots into `assets/screenshot.png` to populate the preview sectio
 
 ## Links
 
-- Live site: [use-canvas-calc.vercel.app](https://use-canvas-calc.vercel.app)
+- Live site: [usecanvascalc.com](https://usecanvascalc.com)
 - App: [canvascalculator.xyz](https://canvascalculator.xyz)
 - GitHub: [github.com/sahajkhandelwal1/use-canvas-calc](https://github.com/sahajkhandelwal1/use-canvas-calc)
