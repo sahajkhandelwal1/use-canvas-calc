@@ -8,7 +8,6 @@ lucide.createIcons();
 // ── Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-import { Analytics } from "@vercel/analytics/next"
 
 /* ============================================================
    Mockup Interactivity
