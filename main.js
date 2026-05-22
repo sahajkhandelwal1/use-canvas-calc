@@ -172,10 +172,10 @@ function animateCounter(el, target, suffix) {
     duration: 1.85,
     ease: 'power2.out',
     onUpdate() {
-      el.textContent = Math.floor(obj.val) + suffix;
+      el.textContent = Math.floor(obj.val).toLocaleString() + suffix;
     },
     onComplete() {
-      el.textContent = target + suffix;
+      el.textContent = target.toLocaleString() + suffix;
     }
   });
 }
@@ -192,7 +192,7 @@ ScrollTrigger.create({
   once: true,
   onEnter() {
     document.querySelectorAll('.stat-number').forEach(el => {
-      const target = parseInt(el.dataset.target, 10);
+      const target = parseInt(el.dataset.target.replace(/,/g, ''), 10);
       const suffix  = el.dataset.suffix || '';
       animateCounter(el, target, suffix);
     });
