@@ -5,7 +5,7 @@ Marketing landing page for [canvascalculator.xyz](https://canvascalculator.xyz),
 ## What's on the page
 
 - **Hero** — headline, tagline, CTA linking to the app
-- **Stats** — 750+ users, 20+ countries, 70% weekly return rate, 100% free
+- **Stats** — 2,000+ users, 35+ countries, 70% weekly return rate, 100% free
 - **Features** — six core features of the app
 - **How it works** — 3-step onboarding guide
 - **Preview** — interactive mockup of the real dashboard (drag courses to reorder, check off assignments)
